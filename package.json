@@ -1,0 +1,24 @@
+{
+  "name": "npm_sikdel",
+  "version": "1.0.0",
+  "description": "Python sikera kam raincha eta Finland ma. Teivara esso halka java-script sikdim vanera ma aayeko hya.",
+  "main": "bot.js",
+  "type": "module",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Dhamakedar",
+    "Sikdel",
+    "WomaiWohWohWoh",
+    "Prabeshdada",
+    "daidon"
+  ],
+  "author": "Prabesh Dai",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "twit": "^2.2.11"
+  }
+}
