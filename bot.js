@@ -1,6 +1,7 @@
 import Twit from "twit";
-import { keys } from "./config.js";
+import * as t_setter from "./config.js";
 
-var T = new Twit(keys);
+var T = new Twit(t_setter.keys);
 
-console.log("Bot is starting!");
+// T.get("search/tweets", t_setter.search_params, t_setter.on_data);
+// T.post("statuses/update", t_setter.tweet, t_setter.on_tweet);
