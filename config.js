@@ -8,24 +8,12 @@ const keys = {
     access_token_secret: process.env.ACCESS_TOKEN_SECRET,
 };
 
-const search_params = {
-    q: 'Naya hannu paro node js bata haha!',
-    count: 2
-};
+var r = Math.floor(Math.random() * 100);
+const texts = {
+    random_text: 'Number ' + r + ' chai random ho hai.',
+    follow_text: 'Thank you for following, @'
+}
 
-const tweet = {
-    status: 'Naya hannu paro node js bata haha!'
-};
+const user_name = "@prwshshrm";
 
-export { keys, search_params, tweet };
-
-export function on_data(err, data, response) {
-    var tweets = data.statuses;
-    for (var i = 0; i < tweets.length; i++) {
-        console.log(tweets[i].user.name);
-    }
-};
-
-export function on_tweet(err, data, response) {
-    console.log(data);
-};
+export { keys, texts, user_name };

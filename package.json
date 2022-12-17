@@ -5,8 +5,8 @@
   "main": "bot.js",
   "type": "module",
   "scripts": {
-    "start": "node bot.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "bot.js",
+    "start": "node ./bot.js"
   },
   "keywords": [
     "Dhamakedar",
@@ -19,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
+    "node-schedule": "^2.1.0",
     "twit": "^2.2.11"
   }
 }
